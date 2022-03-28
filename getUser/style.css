@@ -1,0 +1,152 @@
+body{
+    background-color: rgba(158, 107, 120, 0.452);
+    padding:0;
+    margin:0;
+}
+#nav{
+    width: 100%;
+    background-color:rgb(52,79,104);
+    vertical-align: top;
+    height: 60px;
+    text-align: center;
+    display: inline-block;
+
+}
+.sticky{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+#logo{   width: 5%;
+    height: 70%;
+    padding:0px 5px 5px;
+    border-radius: 50%;
+    float:left;
+    margin-right:20px;
+    margin-top: 7px;
+
+}
+#nav ul li{
+    color:rgb(25, 34, 43);
+    display:inline;
+    font-size: 2 rem;
+    text-transform: uppercase;
+    height:100%;
+    margin: right 50px;
+    padding: 20px;
+}
+
+#nav ul li:hover{
+    background-color:rgb(67, 109, 56);
+    transition: 0.5s;
+}
+
+.checkbtn{
+    float: right;
+    color: rgb(9, 15, 20);
+    font-size: 30px;
+    line-height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#checkbox{
+    display: none;
+}
+#click{
+    color: rgb(13, 26, 39);
+    background-color: #c4cccf;
+    font-size: 2 rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+#click:hover{
+    cursor: pointer;
+    background-color: rgb(129, 59, 59);
+    border-radius:  none;
+    box-shadow: inset -5px -5px 12px #032633, 5px 5px 12px rgba(15,15,15,0.16);
+}
+
+#content {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 26px;
+    column-gap: 23px;
+}
+
+span{
+    display: block;
+}
+label{
+    display:inline;
+}
+
+.container{
+    margin-top:150px;
+    margin-left:250px;
+    background-color:  rgb(52, 79, 104);
+    height: 400px;
+    width:25%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container:hover{
+    box-shadow: inset -10px -10px 12px #b5c1c5, 5px 5px 12px rgba(177,16,16,0.16);
+}
+
+.UserContent {
+    font-weight: 700;
+    text-align: center;
+    margin-top: 70px;
+    display:flex;
+    flex-direction: column;
+    gap: 4px;
+    left: 50px;
+    color: rgb(21, 34, 17);
+    font-size:large;
+
+}
+
+.img {
+    position: relative;
+    display: flex;
+    top: 50px;
+    height: 10rem;
+    width: 10rem;
+    left: 30%;
+    border-radius: 40%;
+}
+
+
+@media (max-width:950px){
+    #nav ul li{
+        color:rgb(20, 27, 32);
+        font-size: 12px;
+        margin-right:3px;
+        transition: 0.5s;
+    }
+
+    ul{
+        position: fixed;
+        margin-top: 60px;
+        background-color: #0a3444;
+        transition: all 0.5s;
+        right: -100%;
+    }
+
+    li:hover{
+        cursor: pointer;
+        color:#0082e6;
+        font-weight: bold;
+    }
+    #checkbox:checked ~ ul{
+        transition: 1s;
+        left:-90%;
+    }
+}
+
+
